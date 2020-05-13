@@ -1,6 +1,5 @@
 var request = require('request');
 var express = require('express');
-var rp = require('request-promise');
 var md5 = require('md5-node');
 var app = express();
 
