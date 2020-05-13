@@ -160,5 +160,5 @@ function xm_md5(){
 
 module.exports = (req, res) => {
 	var ok="hello word";
-	res.send(ok);
+	res.send(req.query);
 }
