@@ -159,6 +159,7 @@ function xm_md5(){
 };
 
 module.exports = (req, res) => {
-	var ok="hello word";
-	res.send(req.query);
+	var ok='{"ret":0,"msg":"0","trackId":227985666,"uid":134944915,"albumId":30736201,"title":"都市最强仙帝027集阴鬼宗再现","domain":"http://audiopay.cos.xmcdn.com","totalLength":10274310,"sampleDuration":180,"sampleLength":1562130,"isAuthorized":true,"apiVersion":"1.0.0","seed":6367,"fileId":"18*13*43*50*31*61*59*60*67*26*59*53*5*59*65*48*59*24*55*18*60*6*48*61*51*3*49*62*18*14*47*56*7*53*9*21*1*40*46*64*43*39*64*60*67*0*44*16*30*38*41*","buyKey":"617574686f72697a6564","duration":1269,"ep":"20NvOoh6T39X3qwKO4cY5g5bVhg+hSPOT4QaeAq3WCurneyLjf7aybgHg/yJ3vIzCOUkgScYe6di3uz+xg0c2LYTPiBS","highestQualityLevel":1,"downloadQualityLevel":1,"authorizedType":1}';
+	var ew= JSON.parse(ok);
+	res.send(get_player_url(ew));
 }
