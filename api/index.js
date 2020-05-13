@@ -3,12 +3,6 @@ var express = require('express');
 var md5 = require('md5-node');
 var app = express();
 
-
-var request = require('request');
-var express = require('express');
-var md5 = require('md5-node');
-var app = express();
-
 function vt(t, e) {
     for (var n, r = [], o = 0, i = "", a = 0; 256 > a; a++)
         r[a] = a;
